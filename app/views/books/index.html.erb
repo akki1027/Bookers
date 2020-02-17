@@ -25,4 +25,7 @@
 </div>
 
 <div class="left-container">
+	<%= link_to "Show", book_path(@book) %>
+	<%= link_to "Edit", book_path(@book) %>
+	<%= link_to "Destroy", book_path(@book), method: :delete %>
 </div>
