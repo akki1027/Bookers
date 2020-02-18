@@ -27,7 +27,22 @@
 		<% end %>
 	</table>
 
+
 	<h2 class="new-h2">New Book</h2>
+
+<!-- blankがあった際にエラーメッセージを表示する -->
+	<% if @book.errors.any? %>
+		<div class="alert alert-warning">
+			<h2><%= pluralize(@book.errors.count, "error") %> prohibited this book from being saved:</h2>
+
+			<ul style="list-style-type: square">
+			<% @book.errors.full_messages.each do |message| %>
+				<li><%= message %></li>
+			<% end %>
+			</ul>
+		</div>
+	<% end %>
+<!-- ここまで、blankがあった際にエラーメッセージを表示する -->
 
 	<%= form_for(@book) do |f| %>
 		<div class="field-area">
