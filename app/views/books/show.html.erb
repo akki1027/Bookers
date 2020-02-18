@@ -1,11 +1,10 @@
 <body>
-	<strong>Title:</strong>
-	<p><%= @book.title %></p>
-	<strong>Body:</strong>
-	<p><%= @book.body %></p>
+	<p class="show-p">Title: <span class="show-span"><%= @book.title %></span></p>
 
-	<%= link_to "edit", edit_book_path(@book) %>
-	<%= link_to "back", edit_book_path(@book) %>
+	<p class="show-p">Body: <span class="show-span"><%= @book.body %></span></p>
+
+	<a class="show-a"><%= link_to "Edit", edit_book_path(@book) %> |
+	<%= link_to "Back", edit_book_path(@book) %></a>
 </body>
 
 <!-- 未完成　indexができてから直す-->
