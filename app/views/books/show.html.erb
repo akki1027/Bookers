@@ -1,8 +1,11 @@
 <body>
 	<strong>Title:</strong>
-	<p><%= @blog.title %></p>
+	<p><%= @book.title %></p>
 	<strong>Body:</strong>
-	<p><%= @blog.body %></p>
+	<p><%= @book.body %></p>
+
+	<%= link_to "edit", edit_book_path(@book) %>
+	<%= link_to "back", edit_book_path(@book) %>
 </body>
-<%= link_to "edit", edit_book_path(@book) %>
-<%= link_to "back", edit_book_path(@book) %>
+
+<!-- 未完成　indexができてから直す-->

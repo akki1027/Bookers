@@ -2,14 +2,17 @@
 	<h1>Editing Book</h1>
 
 	<% form_for(@book) do |f| %>
-		<h4>Title:</h4>
+		<h4>Title</h4>
 		<%= f.text_field :title %>
 
-		<h4>Body:</h4>
+		<h4>Body</h4>
 		<%= f.text_area :body %>
-		<%= f.submit 'update' %>
+
+		<%= f.submit 'Update Book' %>
 	<% end %>
 
-	<%= link_to "show", show_book_path(@book) %>
-	<%= link_to "back", show_book_path(@book) %>
+	<%= link_to "show", book_path(@book) %>
+	<%= link_to "back", book_path(@book) %>
 </body>
+
+<!-- 未完成 indexができてから直す-->
