@@ -4,6 +4,11 @@
 			<%= flash[:create] %>
 		</div>
 	<% end %>
+	<% if flash[:update] %>
+		<div class="flash">
+			<%= flash[:update] %>
+		</div>
+	<% end %>
 
 	<p class="show-p">Title: <span class="show-span"><%= @book.title %></span></p>
 
