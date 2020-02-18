@@ -99,5 +99,10 @@ td {
 	font-weight: normal;
 }
 
+/*editのcss*/
+.edit-h2 {
+	margin-bottom: 20px;
+	font-size: 26px;
+}
 
 
