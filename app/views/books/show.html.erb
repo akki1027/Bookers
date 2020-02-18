@@ -1,4 +1,10 @@
 <body>
+	<% if flash[:create] %>
+		<div class="flash">
+			<%= flash[:create] %>
+		</div>
+	<% end %>
+
 	<p class="show-p">Title: <span class="show-span"><%= @book.title %></span></p>
 
 	<p class="show-p">Body: <span class="show-span"><%= @book.body %></span></p>
