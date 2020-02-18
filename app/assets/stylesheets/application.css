@@ -73,19 +73,22 @@ td {
     padding-right: 5px;
 }
 
+/*newとshow共通*/
+.field-area {
+	padding-bottom: 10px;
+}
+
 /*newのcss*/
 .new-h2 {
 	margin-top: 20px;
 	margin-bottom: 20px;
+	font-size: 20px;
 }
 
 .new-h4 {
 	font-weight: normal;
 }
 
-.new-book-field {
-	padding-bottom: 10px;
-}
 
 /*showのcss*/
 .show-p {
