@@ -73,9 +73,13 @@ td {
     padding-right: 5px;
 }
 
-/*newとshow共通*/
+/*newとedit共通*/
 .field-area {
 	padding-bottom: 10px;
+}
+
+h4 {
+	font-weight: normal;
 }
 
 /*newのcss*/
@@ -83,10 +87,6 @@ td {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	font-size: 20px;
-}
-
-.new-h4 {
-	font-weight: normal;
 }
 
 
@@ -100,7 +100,7 @@ td {
 }
 
 /*editのcss*/
-.edit-h2 {
+.edit-h1 {
 	margin-bottom: 20px;
 	font-size: 26px;
 }
